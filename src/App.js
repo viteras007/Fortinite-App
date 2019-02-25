@@ -35,8 +35,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className='title'>
-          <h1>FORTNITE TRACKER</h1>
+        <div className="titleBox">
+          <div className='title'>
+            <h1>FORTNITE TRACKER</h1>
+          </div>
         </div>
         <div className='searchbox'>
           <form onSubmit={this.handleSubmit}>

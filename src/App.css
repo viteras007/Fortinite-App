@@ -36,6 +36,37 @@
   text-align: center;
   font-family: 'Coiny', cursive;
   font-size: 1.5em;
+  color: #ffed00;
+  opacity: 1;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.titleBox{
+  border-radius: 35px;
+  background-color: rgba(0, 0, 0, 0.38);
+  border: solid;
+  border-color: #fdf469;
+  margin: 13em;
+}
+
+@media only screen and (max-width: 767px) {
+  /* For mobile phones: */
+  .title{
+    text-align: center;
+    font-family: 'Coiny', cursive;
+    color: #ffed00;
+    opacity: 1;
+    font-size: 0.8em;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  }
+  
+  .titleBox{
+    border-radius: 35px;
+    background-color: rgba(0, 0, 0, 0.38);
+    border: solid;
+    border-color: #fdf469;
+    margin: 4em;
+  }
 }
 
 .searchbox{

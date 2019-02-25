@@ -31,3 +31,17 @@
     transform: rotate(360deg);
   }
 }
+
+.title{
+  text-align: center;
+  font-family: 'Coiny', cursive;
+  font-size: 1.5em;
+}
+
+.searchbox{
+  text-align: center;
+}
+
+.label-username{
+  
+}

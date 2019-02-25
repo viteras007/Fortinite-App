@@ -1,4 +1,5 @@
 import React from "react";
+import '../Fortnite/Fortnite.css';
 
 class Fortnite extends React.Component {
   constructor(props) {
@@ -34,7 +35,7 @@ class Fortnite extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className='dados'>
         <div>NICK: {this.props.username}</div>
         <div>WIN SOLO:{this.state.winsolo}</div>
         <div>WIN DUO:{this.state.windupla}</div>

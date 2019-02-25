@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Fortnite from './Fortnite';
+import Fortnite from './Fortnite/Fortnite';
 
 class App extends Component {
   constructor(props) {
@@ -18,9 +18,9 @@ class App extends Component {
     this.setState({ fieldname: event.target.value });
   }
 
-  handleSubmit(event) { 
-    this.setState({ username: this.state.fieldname });       
-    this.setState({isName: true});
+  handleSubmit(event) {
+    this.setState({ username: this.state.fieldname });
+    this.setState({ isName: true });
     event.preventDefault();
   }
 
@@ -29,19 +29,21 @@ class App extends Component {
       return (<div>
         <Fortnite username={this.state.username} />
       </div>)
-      this.setState({ username: ''});
+      this.setState({ username: '' });
     }
   }
   render() {
     return (
       <div>
-        <h1>FORTNITE TRACKER</h1>
-        <div>
+        <div className='title'>
+          <h1>FORTNITE TRACKER</h1>
+        </div>
+        <div className='searchbox'>
           <form onSubmit={this.handleSubmit}>
-            <label>
+            <label className='label-username'>
               USERNAME:
-            <input type="text" name="name" onChange={this.handleChange} />
             </label>
+            <input type="text" name="name" onChange={this.handleChange} />
             <input type="submit" value="Submit" />
           </form>
           {this.renderizando()}
